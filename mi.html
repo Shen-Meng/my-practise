@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>小米商城</title>
+	<link rel="stylesheet" href="css/mi.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.animate-colors.js"></script>
+	<script src="js/mi.js"></script>
+</head>
+<body>
+    <!-- 头部菜单开始 -->
+	<header>
+		<div class="header">
+			<div id="header-left">
+			<a href="" class="header-left-a">小米商城</a>
+			<span class="sep">|</span>
+			<a href="" class="header-left-a">MIUI</a>
+			<span class="sep">|</span>
+			<a href="" class="header-left-a">米聊</a>
+			<span class="sep">|</span>
+			<a href="" class="header-left-a">游戏</a>
+			<span class="sep">|</span>
+			<a href="" class="header-left-a">多看阅读</a>
+			<span class="sep">|</span>
+			<a href="" class="header-left-a">云服务</a>
+			<span class="sep">|</span>
+			<a href="" class="header-left-a">小米网移动版</a>
+			<span class="sep">|</span>
+			<a href="" class="header-left-a">问题反馈</a>
+			<span class="sep">|</span>
+			<a href="" class="header-left-a">Select Region</a>
+		</div>
+		<div id="header-right">
+			<div class="header-right-link">
+				<a href="">登录</a>
+				<span class="sep">|</span>
+				<a href="">注册</a>
+			</div>
+			<div class="header-right-cart"><img src="images/mi/cart.jpg" alt=""><span>购物车(0)</span></div>
+			<div class="cart-content"></div>
+		</div>
+		</div>
+	</header>
+	<!-- 头部菜单结束 -->
+
+	<!-- 导航栏开始 -->
+	<nav>
+		<div id="mainnav">
+			<div class="mainnav-img">
+				<img id="logo" src="images/mi/logo.jpg" alt="">
+				<img id="gif" src="images/mi/gif.gif" alt="">
+			</div>
+			<div id="menu">
+				<ul>
+					<li class="menus" subid="miphone">小米手机</li>
+					<li class="menus" subid="redmi">红米</li>
+					<li class="menus" subid="pad">平板 · 笔记本</li>
+					<li class="menus" subid="tv">电视</li>
+					<li class="menus" subid="video">盒子 · 影音</li>
+					<li class="menus" subid="router">路由器</li>
+					<li class="menus" subid="hardware">智能硬件</li>
+					<li><a href="">服务</a></li>
+					<li><a href="">社区</a></li>
+				</ul>
+			</div>
+			<div id="search">
+				<form action="">
+					<input type="text" name="" id="search-text">
+				</form>
+				<div class="search-btn">MI</div>
+			</div>
+		</div>
+		<div id="use-clear"></div>
+		<div id="subnav">
+			<ul>
+				<li id="miphone">
+					<div class="submenu">
+						<img src="images/mi/subnav1.jpg" alt="">
+						<p class="product">小米Max</p>
+						<p class="price">1299元起</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米手机5</p>
+						<p class="price">1999元起</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米手机4c</p>
+						<p class="price">1099元</p>
+					</div>
+				</li>
+				<li id="redmi">
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">红米Pro</p>
+						<p class="price">1499起</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">红米Note 3</p>
+						<p class="price">899起</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">红米手机3S</p>
+						<p class="price">699元起</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">红米手机3</p>
+						<p class="price">699元起</p>
+					</div>
+				</li>
+				<li id="pad">
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米平板2 16GB</p>
+						<p class="price">999元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米平板2 64GB</p>
+						<p class="price">1299元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米平板2 64GB Windows版</p>
+						<p class="price">1299元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米笔记本Air 12.5"</p>
+						<p class="price">3499元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米笔记本Air 13.3"</p>
+						<p class="price">4999元</p>
+					</div>
+				</li>
+				<li id="tv">
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米电视3S 43英寸</p>
+						<p class="price">1499元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米电视3S 48英寸</p>
+						<p class="price">1999元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米电视3 55英寸</p>
+						<p class="price">3299元起</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米电视3 60英寸</p>
+						<p class="price">4299元起</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米电视3S 65英寸 曲面</p>
+						<p class="price">8999元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米电视3 70英寸</p>
+						<p class="price">9999元</p>
+					</div>
+				</li>
+				<li id="video">
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米盒子mini版</p>
+						<p class="price">179元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米盒子3</p>
+						<p class="price">249元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米盒子3 增强版</p>
+						<p class="price">399元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米电视主机</p>
+						<p class="price">999元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米家庭音响</p>
+						<p class="price">899元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米家庭音响 标准版</p>
+						<p class="price">699元</p>
+					</div>
+				</li>
+				<li id="router">
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">全新小米路由器</p>
+						<p class="price">699元起</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米路由器3</p>
+						<p class="price">149元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米路由器 mini</p>
+						<p class="price">129元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米路由器 3C</p>
+						<p class="price">99元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米路由器 青春版</p>
+						<p class="price">79元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米WiFi放大器</p>
+						<p class="price">39元</p>
+					</div>
+				</li>
+				<li id="hardware">
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">九号平衡车</p>
+						<p class="price">1999元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米净水器</p>
+						<p class="price">1299元起</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">米家压力IH电饭煲</p>
+						<p class="price">999元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">小米空气净化器 2</p>
+						<p class="price">699元</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">智能摄像机</p>
+						<p class="price">149元起</p>
+					</div>
+					<span class="submenu-sep"></span>
+					<div class="submenu">
+						<img src="images/mi/are.jpg" alt="">
+						<p class="product">查看全部<br>智能硬件</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- 导航栏结束 -->
+
+	<!-- banner开始-->
+	<div id="banner">
+		<ul id="banner-menu">
+			<li id="banner-menu-top">
+				<a href="">手机 平板 电话卡</a>
+				<a class="banner-subbanner" href="">&gt;</a>
+				<div class="subbanner" id="subbanner1">
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner1.jpg" alt=""></a><a href="">小米手机5</a><span>选购</span>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner1.jpg" alt=""></a><a href="">小米Max</a><span>选购</span>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner1.jpg" alt=""></a><a href="">红米Note 3</a><span>选购</span>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner1.jpg" alt=""></a><a href="">红米手机3S</a><span>选购</span>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner1.jpg" alt=""></a><a href="">红米Pro</a><span>选购</span>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner1.jpg" alt=""></a><a href="">红米手机3</a><span>选购</span>
+						</li>
+					</ul>
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner1.jpg" alt=""></a><a href="">小米平板2</a><span>选购</span>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner1.jpg" alt=""></a><a href="">合约机</a><span>选购</span>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner1.jpg" alt=""></a><a href="">小米手机4c</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner1.jpg" alt=""></a><a href="">定制版手机</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner1.jpg" alt=""></a><a href="">对比手机</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner1.jpg" alt=""></a><a href="">小米移动 电话卡</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="">笔记本</a>
+				<a class="banner-subbanner" href="">&gt;</a>
+				<div class="subbanner" id="subbanner2">
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner2.jpg" alt=""></a><a href="">小米笔记本Air</a><span>选购</span>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner2.jpg" alt=""></a><a href="">USB-C转接器</a>
+						</li>
+			        </ul>
+			    </div>
+			</li>
+			<li>
+				<a href="">电视 盒子</a>
+				<a class="banner-subbanner" href="">&gt;</a>
+				<div class="subbanner" id="subbanner3">
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner3.jpg" alt=""></a><a href="">小米电视 43英寸</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner3.jpg" alt=""></a><a href="">小米电视 48英寸</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner3.jpg" alt=""></a><a href="">小米电视 55英寸</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner3.jpg" alt=""></a><a href="">小米电视 60英寸</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner3.jpg" alt=""></a><a href="">小米电视 65英寸</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner3.jpg" alt=""></a><a href="">小米电视 70英寸</a>
+						</li>
+					</ul>
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner3.jpg" alt=""></a><a href="">小米电视主机</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner3.jpg" alt=""></a><a href="">小米盒子3 增强版</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner3.jpg" alt=""></a><a href="">小米盒子3</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner3.jpg" alt=""></a><a href="">小米盒子 mini</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner3.jpg" alt=""></a><a href="">小米低音炮</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner3.jpg" alt=""></a><a href="">蓝牙手柄</a>
+						</li>
+					</ul>
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner3.jpg" alt=""></a><a href="">家庭音响</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner3.jpg" alt=""></a><a href="">电视盒子配件</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="">路由器 智能硬件</a>
+				<a class="banner-subbanner" href="">&gt;</a>
+				<div class="subbanner" id="subbanner4">
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">小米VR眼镜</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">小米无人机</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">小米路由器</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">九号平衡车</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">米家压力IH电饭煲</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">米家恒温电水壶</a>
+						</li>
+					</ul>
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">米兔儿童电话手表</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">血压计</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">净化器</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">净水器</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">摄像机</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">智能灯</a>
+						</li>
+					</ul>
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">智能插座 基础版
+							</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">智能家庭组合</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">手环及配件</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">体重秤</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">WIFI放大器</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner4.jpg" alt=""></a><a href="">全部智能硬件</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="">移动电源 电池 插线板</a>
+				<a class="banner-subbanner" href="">&gt;</a>
+				<div class="subbanner" id="subbanner5">
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner5.jpg" alt=""></a><a href="">小米移动电源</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner5.jpg" alt=""></a><a href="">小米插线板</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner5.jpg" alt=""></a><a href="">品牌移动电源</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner5.jpg" alt=""></a><a href="">移动电源附件</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner5.jpg" alt=""></a><a href="">电池</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner5.jpg" alt=""></a><a href="">充电器</a>
+						</li>
+					</ul>
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner5.jpg" alt=""></a><a href="">线材</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner5.jpg" alt=""></a><a href="">存储卡</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner5.jpg" alt=""></a><a href="">彩虹5号电池</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner5.jpg" alt=""></a><a href="">彩虹7号电池</a>
+						</li>
+						<li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="">耳机 音箱</a>
+				<a class="banner-subbanner" href="">&gt;</a>
+				<div class="subbanner" id="subbanner6">
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner6.jpg" alt=""></a><a href="">小米头戴式耳机</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner6.jpg" alt=""></a><a href="">小米圈铁耳机</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner6.jpg" alt=""></a><a href="">小米胶囊耳机</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner6.jpg" alt=""></a><a href="">小米活塞耳机 基础版</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner6.jpg" alt=""></a><a href="">小米蓝牙耳机</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner6.jpg" alt=""></a><a href="">品牌耳机</a>
+						</li>
+					</ul>
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner6.jpg" alt=""></a><a href="">小米蓝牙音箱</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner6.jpg" alt=""></a><a href="">小米随身蓝牙音箱</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner6.jpg" alt=""></a><a href="">小钢炮音箱 2</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner6.jpg" alt=""></a><a href="">小钢炮音箱 青春版</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner6.jpg" alt=""></a><a href="">小米方盒子音箱</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner6.jpg" alt=""></a><a href="">网络收音机</a>
+						</li>
+					</ul>
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner6.jpg" alt=""></a><a href="">品牌音箱
+							</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="">保护套 后盖</a>
+				<a class="banner-subbanner" href="">&gt;</a>
+				<div class="subbanner" id="subbanner7">
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner7.jpg" alt=""></a><a href="">保护壳/保护套</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner7.jpg" alt=""></a><a href="">后盖</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="">贴膜 其他配件</a>
+				<a class="banner-subbanner" href="">&gt;</a>
+				<div class="subbanner" id="subbanner8">
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner8.jpg" alt=""></a><a href="">贴膜</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner8.jpg" alt=""></a><a href="">自拍杆</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner8.jpg" alt=""></a><a href="">贴纸</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner8.jpg" alt=""></a><a href="">防尘塞</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner8.jpg" alt=""></a><a href="">手机支架</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner8.jpg" alt=""></a><a href="">随身WiFi</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="">米兔 服装</a>
+				<a class="banner-subbanner" href="">&gt;</a>
+				<div class="subbanner" id="subbanner9">
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner9.jpg" alt=""></a><a href="">米兔</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner9.jpg" alt=""></a><a href="">服装</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner9.jpg" alt=""></a><a href="">变形金刚特别版声波</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<a href="">箱包 其他周边</a>
+				<a class="banner-subbanner" href="">&gt;</a>
+				<div class="subbanner" id="subbanner10">
+					<ul class="subbanner-menu">
+						<li>
+							<a href=""><img src="images/mi/banner10.jpg" alt=""></a><a href="">箱包</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner10.jpg" alt=""></a><a href="">90分旅行箱</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner10.jpg" alt=""></a><a href="">小米鼠标垫</a>
+						</li>
+						<li>
+							<a href=""><img src="images/mi/banner10.jpg" alt=""></a><a href="">生活周边</a>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<div id="banner-img">
+			<ul id="banner-subimg">
+				<li><img src="images/mi/bannerimg1.jpg" alt=""></li>
+				<li><img src="images/mi/bannerimg2.jpg" alt=""></li>
+				<li><img src="images/mi/bannerimg3.jpg" alt=""></li>
+				<li><img src="images/mi/bannerimg4.jpg" alt=""></li>
+				<li><img src="images/mi/bannerimg5.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div id="banner-img-btn">
+			<div id="banner-img-btn1">&lt;</div>
+			<div id="banner-img-btn2">&gt;</div>
+		</div>
+	</div>
+	<!-- banner结束 -->
+</body>
+</html>
