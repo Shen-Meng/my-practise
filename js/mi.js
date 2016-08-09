@@ -137,6 +137,41 @@ $(function () {
             }
             changeImg();
         })
-    })
+    });
 })
 
+//明星产品borderTop颜色
+$(function () {
+    $('#star-img').find('li').eq(0).css('borderColor', '#ffac13');
+    $('#star-img').find('li').eq(1).css('borderColor', '#83c44e');
+    $('#star-img').find('li').eq(2).css('borderColor', '#2196f3');
+    $('#star-img').find('li').eq(3).css('borderColor', '#2196f3');
+    $('#star-img').find('li').eq(4).css('borderColor', '#00c0a5');
+    $('#star-img').find('li').eq(5).css('borderColor', '#ffac13');
+    $('#star-img').find('li').eq(6).css('borderColor', '#83c44e');
+    $('#star-img').find('li').eq(7).css('borderColor', '#2196f3');
+    $('#star-img').find('li').eq(8).css('borderColor', '#2196f3');
+    $('#star-img').find('li').eq(9).css('borderColor', '#00c0a5');
+})
+
+//明星产品控制
+$(function () {
+    $('#star-change-btn1').click(function() {
+        $('#star-img').children('ul').animate({
+            left:'0px'}, 200)
+    });
+    $('#star-change-btn2').click(function() {
+        $('#star-img').children('ul').animate({
+            left:'-1226px'}, 200)
+    });
+    $('#star-change-btn1').hover(function(){
+        $(this).css('color', '#ff6700');
+    },function(){
+        $(this).css('color','#bebebe');
+    });
+    $('#star-change-btn2').hover(function(){
+        $(this).css('color', '#ff6700');
+    },function(){
+        $(this).css('color','#bebebe');
+    })
+})
