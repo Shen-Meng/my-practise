@@ -158,9 +158,9 @@ nav {
 	border-left: 1px solid #f0f0f0;
 	cursor: pointer;
 	transition: all 3s;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
 }
 
 #use-clear {

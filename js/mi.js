@@ -1,5 +1,5 @@
+// 购物车鼠标移入和移出效果
 $(function () {
-    // 购物车鼠标移入和移出效果
 	$('.header-right-cart').hover(function(){
     $(this).css('backgroundColor', '#fff');
     $('.header-right-cart span').css('color', '#ff6700');
@@ -12,7 +12,34 @@ $(function () {
     $('.cart-content').css('width', '300px').animate({
         height:'0px'
     },300);
-});
+    });
+})
+
+
+/*
+//导航栏显示效果
+$(function () {
+    $('.menus').mouseover(function(){
+        $('#subnav').css('border', '1px solid #d0d0d0');
+        $(this).css('color', '#ff6700');
+        $('#'+$(this).attr('subid')).show();
+        $('#subnav').height(250);
+    });
+    $('.menus').mouseout(function(){
+        $('#subnav').css('border', '0px solid #d0d0d0');
+        $(this).css('color', '#424242');
+        $('#'+$(this).attr('subid')).hide();
+        $('#subnav').height(0);
+    });
+    $('#subnav li').mouseover(function(){
+        $(this).show();
+        $(this).height(250);
+    });
+    $('#subnav li').mouseout(function(){
+        $(this).hide();
+        $(this).height(0);
+    });
+}) */
 
     /*$(function(){
         var flag = false;
@@ -39,32 +66,7 @@ $(function () {
     })
     })*/
 
-    //导航栏显示效果
-    $('.menus').mouseover(function(){
-        $('#subnav').css('border', '1px solid #d0d0d0');
-        $(this).css('color', '#ff6700');
-        $('#'+$(this).attr('subid')).show();
-        $('#subnav').height(250);
-    });
-    $('.menus').mouseout(function(){
-        $('#subnav').css('border', '0px solid #d0d0d0');
-        $(this).css('color', '#424242');
-        $('#'+$(this).attr('subid')).hide();
-        $('#subnav').height(0);
-    });
-    $('#subnav li').mouseover(function(){
-        $(this).show();
-        $(this).height(250);
-    });
-    $('#subnav li').mouseout(function(){
-        $(this).hide();
-        $(this).height(0);
-    });
-
-
-
-
-    /* $('.menus').hover(function(){
+    /*  $('.menus').hover(function(){
         $('#subnav').css('border', '1px solid #d0d0d0');
         $(this).css('color', '#ff6700');
         $('#'+$(this).attr('subid')).show();
@@ -76,14 +78,47 @@ $(function () {
         $('#subnav').css('border', '0px solid #d0d0d0');
     }); */
 
-    //搜索按钮效果
+
+$(function () {
+    $('.menus').mouseover(function(){
+        $('#subnav').css('border', '1px solid #d0d0d0');
+        $(this).css('color', '#ff6700');
+        $('#'+$(this).attr('subid')).show();
+        $('#subnav').height(250);
+        console.log('aa')
+    });
+    var timer = null;
+    $('.menus').mouseout(function(){
+        $(this).css('color', '#424242');
+        console.log('bb')
+        timer = setTimeout(function(){
+            $('#subnav').css('border', '0px solid #d0d0d0');
+            $('#'+$(this).attr('subid')).hide();
+            $('#subnav').height(0);
+            console.log('cc')
+        }, 500);
+    });
+    $('#subnav ul').mouseover(function(){
+        clearTimeout(timer);
+        console.log('dd')
+    })
+    $('#subnav ul').mouseout(function(){
+        $(this).parent().height(0);
+        $(this).children('li').hide();
+        $(this).parent().css('border', '0px solid #d0d0d0');
+        console.log('ee')
+    })
+})
+
+
+//搜索按钮效果和banner显示效果
+$(function () {
     $('.search-btn').hover(function(){
         $(this).css({'background': '#ff6700', 'color': '#fff'});
     },function(){
         $(this).css({'background': '#fff', 'color': '#424242'});
     });
 
-    //banner显示效果
     $('#banner-menu').children().hover(function(){
         $(this).css('background', '#ff7700');
         $(this).children('.subbanner').css('border', '1px solid #f0f0f0').show();
@@ -91,54 +126,8 @@ $(function () {
         $(this).css('background', 'none');
         $(this).children('.subbanner').css('border', '0px solid #f0f0f0').hide();
     });
-
-    //图片自动轮播
-    $(function(){
-        var i = 0;
-        var bannerSubimg = $('#banner-subimg');
-        var imgs = $('#banner-subimg li').length;
-        function changeImg(){
-            var img_i = i*-1226 + 'px';
-            bannerSubimg.animate({opacity: '.2'}, 100, function(){
-                bannerSubimg.css('left', img_i);
-                bannerSubimg.animate({
-                    opacity: '1'
-                }, 100);
-            })
-        }
-        function auto(){
-            i += 1;
-            if(i>=imgs){
-                i = 0;
-            }
-            changeImg();
-        }
-        changeSelfTime = setInterval(auto, 3000);
-
-        //按钮点击切换图片
-        $('#banner-img-btn').hover(function(){
-            clearInterval(changeSelfTime);
-            $('#banner-img-btn').children().show();
-        },function(){
-            changeSelfTime = setInterval(auto, 3000);
-            $('#banner-img-btn').children().hide();
-        })
-        $('#banner-img-btn1').click(function(){
-            i += 1;
-            if(i>=imgs){
-                i = 0;
-            }
-            changeImg();
-        })
-        $('#banner-img-btn2').click(function(){
-            i -= 1;
-            if(i<=0){
-                i = imgs - 1;
-            }
-            changeImg();
-        })
-    });
 })
+
 
 //明星产品borderTop颜色
 $(function () {
@@ -153,6 +142,54 @@ $(function () {
     $('#star-img').find('li').eq(8).css('borderColor', '#2196f3');
     $('#star-img').find('li').eq(9).css('borderColor', '#00c0a5');
 })
+
+
+//图片自动轮播和点击按钮切换图片
+$(function () {
+    var i = 0;
+    var bannerSubimg = $('#banner-subimg');
+    var imgs = $('#banner-subimg li').length;
+    function changeImg(){
+        var img_i = i*-1226 + 'px';
+        bannerSubimg.animate({opacity: '.2'}, 100, function(){
+            bannerSubimg.css('left', img_i);
+            bannerSubimg.animate({
+                opacity: '1'
+            }, 100);
+        })
+    }
+    function auto(){
+        i += 1;
+        if(i>=imgs){
+            i = 0;
+        }
+        changeImg();
+    }
+    changeSelfTime = setInterval(auto, 3000);
+
+    $('#banner-img-btn').hover(function(){
+        clearInterval(changeSelfTime);
+        $('#banner-img-btn').children().show();
+    },function(){
+        changeSelfTime = setInterval(auto, 3000);
+        $('#banner-img-btn').children().hide();
+    });
+    $('#banner-img-btn1').click(function(){
+        i += 1;
+        if(i>=imgs){
+            i = 0;
+        }
+        changeImg();
+    })
+    $('#banner-img-btn2').click(function(){
+        i -= 1;
+        if(i<=0){
+            i = imgs - 1;
+        }
+        changeImg();
+    });
+})
+
 
 //明星产品控制
 $(function () {
