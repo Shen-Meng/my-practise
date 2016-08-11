@@ -16,7 +16,7 @@ $(function () {
 })
 
 
-/*
+
 //导航栏显示效果
 $(function () {
     $('.menus').mouseover(function(){
@@ -39,75 +39,6 @@ $(function () {
         $(this).hide();
         $(this).height(0);
     });
-}) */
-
-    /*$(function(){
-        var flag = false;
-        $('.menus').mouseover(function(){
-            $('#subnav').css('border', '1px solid #d0d0d0');
-            $(this).css('color', '#ff6700');
-            $('#'+$(this).attr('subid')).show();
-            $('#subnav').height(250);
-    });
-    $('.menus').mouseout(function(){
-        $('#subnav').css('border', '0px solid #d0d0d0');
-        $(this).css('color', '#424242');
-        if(flag){
-          $('#'+$(this).attr('subid')).show();
-          $('#subnav').height(250);
-        }
-    });
-    $('#subnav li').mouseover(function(){
-        flag = true;
-    });
-    $('#subnav li').mouseout(function(){
-            $(this).hide();
-            $(this).height(0);
-    })
-    })*/
-
-    /*  $('.menus').hover(function(){
-        $('#subnav').css('border', '1px solid #d0d0d0');
-        $(this).css('color', '#ff6700');
-        $('#'+$(this).attr('subid')).show();
-        $('#subnav').height(250);
-    },function(){
-        $('#'+$(this).attr('subid')).hide();
-        $(this).css('color', '#424242');
-        $('#subnav').height(0);
-        $('#subnav').css('border', '0px solid #d0d0d0');
-    }); */
-
-
-$(function () {
-    $('.menus').mouseover(function(){
-        $('#subnav').css('border', '1px solid #d0d0d0');
-        $(this).css('color', '#ff6700');
-        $('#'+$(this).attr('subid')).show();
-        $('#subnav').height(250);
-        console.log('aa')
-    });
-    var timer = null;
-    $('.menus').mouseout(function(){
-        $(this).css('color', '#424242');
-        console.log('bb')
-        timer = setTimeout(function(){
-            $('#subnav').css('border', '0px solid #d0d0d0');
-            $('#'+$(this).attr('subid')).hide();
-            $('#subnav').height(0);
-            console.log('cc')
-        }, 500);
-    });
-    $('#subnav ul').mouseover(function(){
-        clearTimeout(timer);
-        console.log('dd')
-    })
-    $('#subnav ul').mouseout(function(){
-        $(this).parent().height(0);
-        $(this).children('li').hide();
-        $(this).parent().css('border', '0px solid #d0d0d0');
-        console.log('ee')
-    })
 })
 
 
