@@ -1,0 +1,40 @@
+﻿body {
+	width: 720px;
+	margin: 0;
+	padding: 0;
+	font-family: 微软雅黑;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+header ul {
+	width: 720px;
+	height: 76px;
+	margin: 0;
+	padding: 0;
+	display: -webkit-flex;
+	display: flex;
+}
+
+header ul li.header {
+	width: 180px;
+	height: 76px;
+	text-align: center;
+}
+
+header ul li.header a{
+	color: #333;
+	font-size: 32px;
+	height: 76px;
+	line-height: 76px;
+}
+
+header ul li.header a:hover {
+	color: red;
+}
