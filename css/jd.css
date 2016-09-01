@@ -1,0 +1,219 @@
+/* 通用 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* 整体布局 */
+#top {
+    width: 100%;
+    height: 30px;
+    background: #F1F1F1;
+    line-height: 30px;
+}
+
+#top-box,#top-main,#nav,#banner,#main,#foot-box,#footer {
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.rt {
+    float: right;
+}
+
+.lf {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+#top-box {
+    height: 30px;
+    font-size: 12px;
+    color: #666;
+    background: #F1F1F1;
+}
+
+#top-main {
+    height:100px;
+    padding:15px 0;
+}
+
+#nav {
+    height:40px;
+}
+#foot-box {
+    height:173px;
+}
+#footer {
+    height:180px;
+}
+
+/* 顶部左侧address */
+.address {
+    float: left;
+    cursor: pointer;
+}
+
+.address-visible {
+    padding: 0 10px;
+    width: 64px;
+}
+
+.address-all {
+    left: 0;
+    width: 230px;
+    height: 56px;
+    border: 1px solid #F1F1F1;
+    border-top: none;
+    padding: 6px 0;
+    display: none;
+}
+
+.address-all .item {
+    float: left;
+    width: 32px;
+    margin: 0 7px;
+    padding: 2px 0;
+    height: 24px;
+    line-height: 24px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.address-all .item:hover {
+    color: #e4393c;
+    background-color: #F1F1F1;
+}
+
+/* 顶部右侧菜单 */
+#top-box ul li {
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+#top-box ul li b {
+    height: 12px;
+    border-left: 1px solid #ddd;
+    margin: 0 5px;
+}
+
+#top-box ul li a {
+    color: #666;
+    cursor: pointer;
+}
+
+#top-box ul li a:hover {
+    color: #FE3B00;
+}
+
+/* 顶部右侧手机京东 */
+li.shouji a {
+    background: url(../images/jd/shoujiicon.png)  0 -2px no-repeat;
+    padding-left: 20px;
+}
+
+#shouji-items {
+    position: absolute;
+    left: 6px;
+    width: 250px;
+    height: 195px;
+    border: 1px solid #ddd;
+    border-top: 1px solid #fff;
+    background: url(../images/jd/shouji.png);
+    display: none;
+}
+
+/* 顶部右侧服务 */
+li.service:hover {
+    background: url(../images/jd/service-bg.png) 7px 0px no-repeat;
+}
+
+#service-items {
+    position: absolute;
+    border: 1px solid #ddd;
+    border-top: none;
+    left: 6px;
+    display: none;
+    padding-left: 2px;
+}
+
+/* 搜索框 */
+#top-main img {
+    padding-top: 10px;
+}
+
+#search-box {
+    width: 500px;
+    height: 75px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.search {
+    width: 494px;
+    height: 30px;
+    border-width: 3px;
+    border-color: #E4393C;
+    border-style: solid;
+    position: relative;
+}
+
+input:focus {
+    outline:medium;
+}
+
+input.text {
+    width: 419px;
+    height: 25px;
+    padding: 2.5px;
+    line-height: 25px;
+    color: #999;
+    float: left;
+    border: none;
+    font-size: 15px;
+    text-indent: 2px;
+}
+input.button {
+    width: 70px;
+    background: #E4393C;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    height: 30px;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    border: none;
+    float: right;
+}
+
+.hot-words {
+    height: 20px;
+    line-height: 20px;
+    padding-top: 5px;
+}
+
+.hot-words a {
+    font-size: 12px;
+    color: #666;
+}
+
+.hot-words a:hover {
+    color: #cd5e45;
+}
