@@ -1156,13 +1156,14 @@ ul.detail_list li {
     margin:0px 10px;
 }
 .footer-img {
-    margin:12px auto;
-    width:999px;
+    width:1200px;
     text-align: center;
+    margin: 0 231px;
 }
 .footer-img a {
-    margin:10px 12px;
+    margin:10px 10px;
     float:left;
+    text-align: center;
 }
 
 #footer a {

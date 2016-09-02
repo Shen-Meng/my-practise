@@ -51,15 +51,15 @@ a:hover {
 }
 
 .show {
-	width: 960px;
-	height: 440px;
+	width: 1050px;
+	height: 500px;
 	margin: 0 auto;
 	margin-top: 120px;
 }
 
 .show ul {
-	width: 960px;
-	height: 440px;
+	width: 1050px;
+	height: 500px;
 	overflow: hidden;
 }
 
@@ -68,10 +68,10 @@ a:hover {
 	position: relative;
 	padding: 10px;
 	cursor: pointer;
-	width: 272px;
-	height: 172px;
+	width: 300px;
+	height: 200px;
 	margin: 10px;
-	border: 4px #ddd solid;
+	border: 5px #ddd solid;
 	float: left;
 }
 
@@ -91,7 +91,7 @@ a:hover {
 }
 
 .show ul li a h1 {
-	font-size: 20px;
+	font-size: 22px;
 	color: #fff;
 	text-align: center;
 	margin-top: 60px;
