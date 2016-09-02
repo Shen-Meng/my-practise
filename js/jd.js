@@ -42,3 +42,40 @@ $(function () {
 		} else {}
 	});
 })
+
+/* 购物车 */
+$(function () {
+	$('#cart').mouseenter(function(){
+		$(this).children('.cw-icon').addClass('hover1')
+		$(this).children('.down').show().addClass('hover2');
+	});
+	$('#cart').mouseleave(function(){
+		$(this).children('.cw-icon').removeClass('hover1')
+		$(this).children('.down').hide();
+	});
+})
+
+/* nav菜单 */
+$(function () {
+	$('#category').mouseenter(function(){
+		$('#cate-box').show();
+	});
+	$('#category').mouseleave(function(){
+		$('#cate-box').hide();
+	});
+})
+
+/* nav二级菜单(GG...jQuery想不出来了...) */
+$(function () {
+	var list =$("#cate-box>li");
+	for(var i=0;i<list.length;i++){
+		list[i].onmouseover=function(){
+			this.children[1].style.display="block";
+			this.children[0].className="hover";
+		}
+		list[i].onmouseout=function(){
+			this.children[1].style.display="none";
+			this.children[0].className="";
+		}
+	}
+})
