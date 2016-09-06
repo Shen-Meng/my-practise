@@ -19,8 +19,8 @@ $(function () {
 
 $(function () {
 	$('.show>ul>li').mouseenter(function() {
-		$(this).children('a').slideToggle(300);
+		$(this).children('a').slideDown(200);
 	}).mouseleave(function() {
-		$(this).children('a').slideToggle(300);
+		$(this).children('a').slideUp(200);
 	});
 })
