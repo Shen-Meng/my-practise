@@ -18,7 +18,7 @@ $(function () {
 })
 
 $(function () {
-	$('.show>ul>li').mouseenter(function() {
+	$('.show>ul li').mouseenter(function() {
 		$(this).children('a').slideDown(200);
 	}).mouseleave(function() {
 		$(this).children('a').slideUp(200);

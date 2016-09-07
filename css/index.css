@@ -52,14 +52,12 @@ a:hover {
 
 .show {
 	width: 1050px;
-	height: 500px;
 	margin: 0 auto;
 	margin-top: 120px;
 }
 
 .show ul {
 	width: 1050px;
-	height: 500px;
 	overflow: hidden;
 }
 
@@ -102,4 +100,26 @@ a:hover {
 	color: #fff;
 	text-align: center;
 	margin-top: 20px;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row:nth-child(1){
+  justify-content: space-around;
+}
+
+.row{
+  flex-basis: 100%;
+  display:flex;
+}
+
+.row:nth-child(2){
+  justify-content: center;
+}
+
+.row:nth-child(3){
+  justify-content: space-between;
 }
